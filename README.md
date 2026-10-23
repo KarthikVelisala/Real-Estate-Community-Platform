@@ -39,12 +39,12 @@ PROJECTMERN/
 │
 ├── server/                     # Node.js Express Backend
 │   ├── config/                 # DB Connection (MongoDB / In-Memory Fallback)
-│   ├── controllers/            # Auth, Property, Agent, Inquiry, Community & Dashboard Controllers
-│   ├── middleware/             # JWT Protect & Role Middleware
-│   ├── models/                 # User, Property, PropertyListing, Agent, Inquiry, CommunityPost, Notification
-│   ├── routes/                 # Express API Routes
-│   ├── seed.js                 # Sample Indian Property Data Auto-Seeder
-│   └── server.js               # Express Server Entry Point
+│   ├── controllers/             # Auth, Property, Agent, Inquiry, Community & Dashboard Controllers
+│   ├── middleware/              # JWT Protect & Role Middleware
+│   ├── models/                  # User, Property, PropertyListing, Agent, Inquiry, CommunityPost, Notification
+│   ├── routes/                  # Express API Routes
+│   ├── seed.js                  # Sample Indian Property Data Auto-Seeder
+│   └── server.js                # Express Server Entry Point
 │
 ├── package.json                # Root package with unified scripts
 └── README.md                   # Project Setup & Documentation
@@ -55,6 +55,7 @@ PROJECTMERN/
 ## 💻 How to Run the Application Locally
 
 ### Prerequisites
+
 - [Node.js](https://nodejs.org/) (v16 or higher)
 - [npm](https://www.npmjs.com/)
 
@@ -63,7 +64,6 @@ PROJECTMERN/
 ### Step 1: Clone the Repository & Install Dependencies
 
 ```bash
-# Clone the repository
 git clone https://github.com/Jovan-7/PROJECTMERN.git
 cd PROJECTMERN
 
@@ -76,45 +76,68 @@ npm install
 cd ..
 ```
 
+If you have forked this project to your own GitHub account, replace the clone URL with your fork's repository URL.
+
 ---
 
 ### Step 2: Start the Application
 
-You can launch the backend server and frontend client simultaneously:
+You can launch the backend server and frontend client in separate terminals.
 
-#### Option A: Start Backend & Frontend Together
+#### Terminal 1: Start Backend Server
+
 ```bash
-# Terminal 1: Start Backend Server (Runs on http://localhost:5000)
 npm run server
+```
 
-# Terminal 2: Start React Frontend (Runs on http://localhost:3000)
+The backend is expected to run at `http://localhost:5000`.
+
+#### Terminal 2: Start React Frontend
+
+```bash
 npm run client
 ```
+
+The frontend is expected to run at `http://localhost:3000`.
 
 ---
 
 ### Step 3: Access the Application in Your Browser
 
-- **Frontend Website:** [http://localhost:3000](http://localhost:3000)
-- **Backend REST API:** [http://localhost:5000/api/property](http://localhost:5000/api/property)
+- **Frontend Website:** http://localhost:3000
+- **Backend REST API:** http://localhost:5000/api/property
+
+These are local development addresses. The application has not yet been deployed to Vercel.
 
 ---
 
 ## 🔑 One-Click Demo Accounts
 
-Use any of these pre-loaded accounts to test different roles:
+Use these sample accounts if they exist in your seeded database and work with your current application.
 
-| Role | Email | Password | Details |
+| **Role** | **Email** | **Password** | **Details** |
 |---|---|---|---|
-| 👑 **Admin** | `admin@realestate.in` | `password123` | Platform Admin (Jovan K Thomas) |
+| 👑 **Admin** | `admin@realestate.in` | `password123` | Sample Platform Admin |
 | 🏢 **Agent (Mumbai)** | `rajesh.sharma@mumbairealty.in` | `password123` | Rajesh Sharma (Apex Realty, RERA Verified) |
 | 🏢 **Agent (Bengaluru)** | `priya@bengaluruhomes.in` | `password123` | Priya Sundaram (Bengaluru Homes) |
 | 🏢 **Agent (Kochi)** | `anand.nair@kochiproperties.in` | `password123` | Anand Nair (Kerala Prime Realty) |
 | 👤 **Buyer / Renter** | `rohan.v@gmail.com` | `password123` | Rohan Verma (Delhi/Mumbai Buyer) |
 
+**Security note:** These are sample credentials from the original README, not verified live accounts. Change default passwords before any public deployment, and never publish real passwords.
+
 ---
 
 ## 📄 License & Author
 
-- **Author:** Jovan K Thomas (`727824tuec102`)
-- **Domain:** Real Estate Community Platform (India)
+- **Maintained and Customized By:** Karthik Velisala
+- **GitHub:** https://github.com/KarthikVelisala
+- **Project:** Real Estate Community Platform (India)
+- **Original Author:** Jovan K Thomas (`727824tuec102`)
+
+This repository is based on the original project by Jovan K Thomas. Original attribution and applicable license terms are retained. Review the original repository's license before redistributing or publishing modifications.
+
+---
+
+## 🎯 Project Objective
+
+The project demonstrates full-stack web development using React, Node.js, Express.js, and MongoDB, including authentication, role-based access, property management, and real estate community features.
