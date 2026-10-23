@@ -1,0 +1,16 @@
+{
+  "name": "real-estate-community-platform-india",
+  "version": "1.0.0",
+  "description": "Real Estate Community Platform for India (MERN Stack)",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "node server/server.js",
+    "seed": "node server/seed.js",
+    "client": "npm run dev --prefix client",
+    "dev": "node server/server.js"
+  },
+  "author": "Jovan K Thomas (727824tuec102)",
+  "dependencies": {
+    "docx": "^9.7.1"
+  }
+}
