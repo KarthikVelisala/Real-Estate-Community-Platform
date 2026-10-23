@@ -132,11 +132,6 @@ Use these sample accounts if they exist in your seeded database and work with yo
 - **Maintained and Customized By:** Karthik Velisala
 - **GitHub:** https://github.com/KarthikVelisala
 - **Project:** Real Estate Community Platform (India)
-- **Original Author:** Jovan K Thomas (`727824tuec102`)
-
-This repository is based on the original project by Jovan K Thomas. Original attribution and applicable license terms are retained. Review the original repository's license before redistributing or publishing modifications.
-
----
 
 ## 🎯 Project Objective
 
